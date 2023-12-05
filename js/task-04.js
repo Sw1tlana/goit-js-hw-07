@@ -1,6 +1,3 @@
-const btnLogin = document.querySelector("button");
-btnLogin.classList.add("btn-login");
-
 const loginForm = document.querySelector(".login-form");
 
 loginForm.addEventListener("submit", chandleSubmit);
@@ -21,5 +18,5 @@ function chandleSubmit (event) {
     }
     console.log(formObj);
     form.reset();
-}
+};
 

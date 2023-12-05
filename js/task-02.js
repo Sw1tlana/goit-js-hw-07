@@ -29,15 +29,12 @@ const images = [
 ];
 
 const list = document.querySelector(".gallery");
-list.classList.add("list-gallery")
 
 images.forEach((image) => {
   const ListItem = document.createElement("li");
   ListItem.classList.add("list-item-gallery")
   
   const img = document.createElement("img");
-
-  img.setAttribute("width", "360");
 
   img.src = image.url;
   img.alt = image.alt;

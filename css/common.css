@@ -20,7 +20,7 @@ ul, li {
   padding-left: 0;
 }
 
-.category-list {
+#categories {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -39,7 +39,7 @@ ul, li {
 
 /* ======================= task-02 ====================== */
 
-.list-gallery {
+.gallery {
  display: flex;
  flex-wrap: wrap;
  gap: 48px 24px;
@@ -58,15 +58,27 @@ ul, li {
 
 /* ======================== task-03 ============================ */
 
-input {
+input[type="text"] {
+  max-width: 360px;
+  width: 100%;
   border-radius: 4px;
   border: 1px solid #808080;
   padding: 8px 16px;
 }
 
-::placeholder{
+input[type="text"]::placeholder{
   color: #808080;
+  font-family: inherit;
+  font-size: 16px;
   letter-spacing: 0.04em;
+}
+
+input[type="text"]:hover {
+  border: 1px solid #000;
+}
+
+input[type="text"]:active {
+  border: 1px solid #2E2F42;
 }
 
 .span-output {
@@ -89,22 +101,58 @@ label {
   letter-spacing: 0.04em;
 }
 
-input {
+input[type="password"] {
   max-width: 360px;
   width: 100%;
   min-height: 40px;
   margin-bottom: 8px;
+  border: 1px solid #808080;
+  font-family: inherit;
 }
 
-.btn-login {
+input[type="password"]:hover {
+  border: 1px solid #000;
+}
+
+input[type="password"]:active {
+  border: 1px solid #2E2F42;
+}
+
+input[type="email"] {
+  max-width: 360px;
+  min-height: 40px;
+  width: 100%;
+  border: 1px solid #808080;
+  margin-bottom: 8px;
+  font-family: inherit;
+}
+
+input[type="email"]:hover {
+  border: 1px solid #000;
+}
+
+input[type="email"]:active {
+  border: 1px solid #2E2F42;
+}
+
+
+button[type="submit"] {
   border-radius: 8px;
-  background: #4E75FF;
+  background-color: #4E75FF;
   display: flex;
-  padding: 8px 16px;
   justify-content: center;
   align-items: center;
+  padding: 8px 16px;
   color: #ffffff;
   border: none;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+button[type="submit"]:hover {
+  background-color: #6C8CFF;
 }
 
 /* ----------------------------------------------------------- */
@@ -127,24 +175,31 @@ input {
   font-weight: 500;
   color: #ffffff;
   border: none;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+}
+
+.change-color:hover {
+  background-color: #6C8CFF;
 }
 
 /* ----------------------------------------------------------------- */
 /* ======================= task-06 ================================== */
 
-.container-controls {
+#controls {
   display: flex;
   align-items: center;
   gap: 16px;
   margin-bottom: 80px;
 }
 
-input {
+input[type="number"] {
   display: flex;
   align-items: center;
   justify-content: center;
   max-width: 100%;
   width: 160px;
+  min-height: 40px;
   height: auto;
   padding: 8px 72px;
   border-radius: 8px;
@@ -157,31 +212,45 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-.create-btn {
+input[type="number"]:hover {
+  border: 1px solid #000;
+}
+
+input[type="number"]:active {
+  border: 1px solid #2E2F42;
+}
+
+button[data-create] {
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 100%;
   width: 120px;
-  min-height: 100%;
+  min-height: 40px;
   padding: 8px 16px;
   border-radius: 8px;
   background: #4E75FF;
   border: none;
   color: #ffffff;
+  font-family: inherit;
   font-size: 16px;
-  font-weight: 500px;
+  font-weight: 500;
   letter-spacing: 0.04em;
 }
 
-.destroy-btn {
+button[data-create]:hover {
+  background-color: #6C8CFF;
+}
+
+button[data-destroy] {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 120px;
   max-width: 100%;
-  min-height: 100%;
+  min-height: 40px;
   padding: 8px 16px;
+  font-family: inherit;
   border-radius: 8px;
   background: #FF4E4E;
   color: #FFF;
@@ -189,6 +258,10 @@ input::-webkit-inner-spin-button {
   font-weight: 500;
   letter-spacing: 0.04em;
   border: none;
+}
+
+button[data-destroy]:hover {
+  background-color: #FF7070;
 }
 
 #boxes {
