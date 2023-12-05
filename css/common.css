@@ -81,7 +81,7 @@ input[type="text"]:active {
   border: 1px solid #2E2F42;
 }
 
-.span-output {
+h1 {
   color: #2E2F42;
   font-size: 24px;
   font-weight: 600;
@@ -157,12 +157,6 @@ button[type="submit"]:hover {
 
 /* ----------------------------------------------------------- */
 /* ===================== task-05 =============================== */
-
-.text-color {
-  color: #2E2F42;
-  font-size: 16px;
-  letter-spacing: 0.04em;
-}
 
 .change-color {
   display: flex;
