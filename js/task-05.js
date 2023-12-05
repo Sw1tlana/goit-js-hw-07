@@ -14,5 +14,4 @@ function changeBackgroundColor () {
 
  bodyColor.style.backgroundColor = randomColor;
  colorSpan.textContent = randomColor;
-
 };
