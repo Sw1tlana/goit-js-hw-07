@@ -1,4 +1,3 @@
-"use strict";
 const inputText = document.getElementById("name-input");
 
 const spanOutput = document.getElementById("name-output");
